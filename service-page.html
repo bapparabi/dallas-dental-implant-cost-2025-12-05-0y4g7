@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Service page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Service page" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-black antialiased">
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-gray-100">
+    <nav class="max-w-7xl mx-auto px-8 md:px-16 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 group">
+        <div class="w-9 h-9 rounded-full bg-black text-white flex items-center justify-center shadow-[0_10px_40px_rgba(0,0,0,0.1)] group-hover:scale-105 group-hover:brightness-110 transition-all duration-300 ease-out">
+          <span class="text-sm font-semibold tracking-tight">DD</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-sm md:text-base font-semibold tracking-tight text-black">Dallas Implant Guide</span>
+          <span class="text-[11px] md:text-xs text-gray-500 font-medium">Transparent Dental Implant Costs</span>
+        </div>
+      </a>
+
+      <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+        <a href="index.html#features" class="text-gray-700 hover:text-black transition-colors duration-300">Cost Features</a>
+        <a href="index.html#benefits" class="text-gray-700 hover:text-black transition-colors duration-300">Why It Matters</a>
+        <a href="service-page.html" class="text-black font-semibold transition-colors duration-300">Service page</a>
+        <a href="index.html#faq" class="text-gray-700 hover:text-black transition-colors duration-300">FAQ</a>
+        <a href="https://dental.com" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-black text-white text-sm font-semibold shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:scale-105 hover:shadow-xl hover:brightness-110 transition-all duration-300 ease-out">
+          Get Pricing Now
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12l-3.75 3.75M21 12H3" />
+          </svg>
+        </a>
+      </div>
+
+      <button class="mobile-menu-button md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-200 text-gray-800 hover:bg-gray-50 hover:scale-105 transition-all duration-300 ease-out" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars text-lg"></i>
+      </button>
+    </nav>
+
+    <div class="mobile-menu hidden md:hidden border-t border-gray-100 bg-white transition-all duration-300 ease-out">
+      <div class="max-w-7xl mx-auto px-8 md:px-16 py-4 flex flex-col gap-3 text-sm font-medium">
+        <a href="index.html#features" class="py-2 text-gray-800 hover:text-black transition-colors duration-300">Cost Features</a>
+        <a href="index.html#benefits" class="py-2 text-gray-800 hover:text-black transition-colors duration-300">Why It Matters</a>
+        <a href="service-page.html" class="py-2 text-black font-semibold transition-colors duration-300">Service page</a>
+        <a href="index.html#faq" class="py-2 text-gray-800 hover:text-black transition-colors duration-300">FAQ</a>
+        <a href="https://dental.com" class="mt-2 inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-black text-white text-sm font-semibold shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:scale-105 hover:shadow-xl hover:brightness-110 transition-all duration-300 ease-out">
+          Get Pricing Now
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12l-3.75 3.75M21 12H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute -top-32 -right-24 w-72 h-72 bg-gradient-to-br from-[#4A90E2]/10 via-[#4A90E2]/5 to-transparent rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -left-24 w-80 h-80 bg-gradient-to-tr from-black/10 via-[#4A90E2]/10 to-transparent rounded-full blur-3xl"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-8 md:px-16 py-24 md:py-32 relative z-10">
+        <div class="text-center max-w-4xl mx-auto">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 text-[11px] md:text-xs font-medium text-gray-700 mb-5 border border-gray-200">
+            <span class="w-2 h-2 rounded-full bg-[#4A90E2]"></span>
+            Complete Dental Implant Services in Dallas
+          </span>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-black leading-tight mb-6">
+            Our Dental Implant
+            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-black via-[#4A90E2] to-black">
+              Services
+            </span>
+          </h1>
+          <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl mx-auto">
+            From single tooth replacement to full mouth reconstruction, we offer comprehensive dental implant solutions tailored to your unique needs and budget.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-20 md:py-32 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-8 md:px-16">
+        <div class="max-w-3xl mb-12 md:mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-black mb-4">
+            Comprehensive Implant Solutions
+          </h2>
+          <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+            Every patient deserves personalized care. Explore our range of dental implant services designed to restore your smile and confidence.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Single Tooth Implant -->
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 ease-out p-7 flex flex-col gap-4">
+            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#4A90E2]/10 text-[#4A90E2] mb-2">
+              <i class="fa-solid fa-tooth text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-black tracking-tight">Single Tooth Implant</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Replace a single missing tooth with a natural-looking, permanent solution. Includes the implant post, abutment, and custom crown.
+            </p>
+            <div class="mt-auto pt-4 border-t border-gray-100">
+              <p class="text-xs text-gray-500 mb-1">Dallas Price Range</p>
+              <p class="text-lg font-semibold text-black">$3,200 – $5,500</p>
+            </div>
+          </div>
+
+          <!-- Multiple Teeth Implants -->
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 ease-out p-7 flex flex-col gap-4">
+            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#4A90E2]/10 text-[#4A90E2] mb-2">
+              <i class="fa-solid fa-teeth text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-black tracking-tight">Multiple Teeth Implants</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Restore several missing teeth with implant-supported bridges. Fewer implants needed than individual replacements, maximizing value.
+            </p>
+            <div class="mt-auto pt-4 border-t border-gray-100">
+              <p class="text-xs text-gray-500 mb-1">Dallas Price Range</p>
+              <p class="text-lg font-semibold text-black">$6,000 – $15,000</p>
+            </div>
+          </div>
+
+          <!-- All-on-4 -->
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 ease-out p-7 flex flex-col gap-4">
+            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#4A90E2]/10 text-[#4A90E2] mb-2">
+              <i class="fa-solid fa-grip text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-black tracking-tight">All-on-4® Implants</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Full arch restoration using just 4 strategically placed implants. Same-day teeth possible for qualifying patients.
+            </p>
+            <div class="mt-auto pt-4 border-t border-gray-100">
+              <p class="text-xs text-gray-500 mb-1">Dallas Price Range (per arch)</p>
+              <p class="text-lg font-semibold text-black">$19,000 – $28,000</p>
+            </div>
+          </div>
+
+          <!-- All-on-6 -->
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 ease-out p-7 flex flex-col gap-4">
+            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#4A90E2]/10 text-[#4A90E2] mb-2">
+              <i class="fa-solid fa-layer-group text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-black tracking-tight">All-on-6 Implants</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Enhanced stability with 6 implants per arch. Ideal for patients with adequate bone density seeking maximum durability.
+            </p>
+            <div class="mt-auto pt-4 border-t border-gray-100">
+              <p class="text-xs text-gray-500 mb-1">Dallas Price Range (per arch)</p>
+              <p class="text-lg font-semibold text-black">$24,000 – $32,000</p>
+            </div>
+          </div>
+
+          <!-- Implant-Supported Dentures -->
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 ease-out p-7 flex flex-col gap-4">
+            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#4A90E2]/10 text-[#4A90E2] mb-2">
+              <i class="fa-solid fa-circle-nodes text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-black tracking-tight">Implant-Supported Dentures</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Removable dentures that snap onto implants for improved stability. More affordable than fixed options with easy maintenance.
+            </p>
+            <div class="mt-auto pt-4 border-t border-gray-100">
+              <p class="text-xs text-gray-500 mb-1">Dallas Price Range (per arch)</p>
+              <p class="text-lg font-semibold text-black">$8,000 – $15,000</p>
+            </div>
+          </div>
+
+          <!-- Bone Grafting -->
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 ease-out p-7 flex flex-col gap-4">
+            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#4A90E2]/10 text-[#4A90E2] mb-2">
+              <i class="fa-solid fa-bone text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-black tracking-tight">Bone Grafting</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Build sufficient bone foundation for successful implant placement. Essential for patients with bone loss from missing teeth.
+            </p>
+            <div class="mt-auto pt-4 border-t border-gray-100">
+              <p class="text-xs text-gray-500 mb-1">Dallas Price Range</p>
+              <p class="text-lg font-semibold text-black">$500 – $3,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 md:py-32 bg-white">
+      <div class="max-w-7xl mx-auto px-8 md:px-16">
+        <div class="max-w-3xl mb-12 md:mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-black mb-4">
+            The Dental Implant Process
+          </h2>
+          <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+            Understanding each step helps you prepare mentally and financially. Here's what to expect from consultation to final restoration.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="relative">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center text-lg font-bold">1</div>
+              <div class="hidden lg:block flex-1 h-0.5 bg-gray-200"></div>
+            </div>
+            <h3 class="text-lg font-semibold text-black mb-2">Consultation & Planning</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Comprehensive exam, 3D imaging, and personalized treatment plan with transparent cost breakdown.
+            </p>
+          </div>
+
+          <div class="relative">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center text-lg font-bold">2</div>
+              <div class="hidden lg:block flex-1 h-0.5 bg-gray-200"></div>
+            </div>
+            <h3 class="text-lg font-semibold text-black mb-2">Implant Placement</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Surgical placement of titanium implant posts. Performed under local anesthesia or sedation for comfort.
+            </p>
+          </div>
+
+          <div class="relative">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center text-lg font-bold">3</div>
+              <div class="hidden lg:block flex-1 h-0.5 bg-gray-200"></div>
+            </div>
+            <h3 class="text-lg font-semibold text-black mb-2">Healing Period</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              3-6 months for osseointegration—the implant fuses with your jawbone for permanent stability.
+            </p>
+          </div>
+
+          <div class="relative">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center text-lg font-bold">4</div>
+            </div>
+            <h3 class="text-lg font-semibold text-black mb-2">Final Restoration</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Custom crown, bridge, or denture attached. Your new teeth look, feel, and function like natural teeth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Implants -->
+    <section class="py-20 md:py-32 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-8 md:px-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-black mb-6">
+              Why Choose Dental Implants?
+            </h2>
+            <div class="space-y-5">
+              <div class="flex items-start gap-4">
+                <div class="mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#4A90E2]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-base md:text-lg font-semibold text-black mb-1">Permanent Solution</h3>
+                  <p class="text-sm md:text-base text-gray-700 leading-relaxed">
+                    Unlike dentures, implants are designed to last a lifetime with proper care. No adhesives, no slipping.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#4A90E2]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-base md:text-lg font-semibold text-black mb-1">Preserve Bone Health</h3>
+                  <p class="text-sm md:text-base text-gray-700 leading-relaxed">
+                    Implants stimulate your jawbone like natural tooth roots, preventing bone loss and facial changes.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#4A90E2]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-base md:text-lg font-semibold text-black mb-1">Natural Look & Feel</h3>
+                  <p class="text-sm md:text-base text-gray-700 leading-relaxed">
+                    Eat, speak, and smile with confidence. Implants function exactly like your natural teeth.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#4A90E2]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-base md:text-lg font-semibold text-black mb-1">Protect Adjacent Teeth</h3>
+                  <p class="text-sm md:text-base text-gray-700 leading-relaxed">
+                    No grinding down healthy teeth for bridges. Implants stand independently.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-gray-100 p-8 shadow-[0_10px_40px_rgba(0,0,0,0.06)]">
+            <p class="text-xs uppercase tracking-wide text-gray-500 font-semibold mb-4">Success Rate</p>
+            <div class="flex items-end gap-4 mb-6">
+              <span class="text-6xl font-bold text-black">98%</span>
+              <span class="text-lg text-gray-600 mb-2">success rate</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed mb-6">
+              Dental implants have one of the highest success rates of any surgical procedure. With proper care, they can last 25+ years.
+            </p>
+            <a href="https://dental.com" class="inline-flex items-center justify-center gap-2 w-full px-6 py-3 rounded-full bg-black text-white text-sm font-semibold hover:scale-105 hover:shadow-xl hover:brightness-110 transition-all duration-300 ease-out">
+              Get Your Free Consultation
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 12h13.5M13.5 5.25L18.75 12 13.5 18.75" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 md:py-32 bg-black text-white">
+      <div class="max-w-7xl mx-auto px-8 md:px-16 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+          Ready to Restore Your Smile?
+        </h2>
+        <p class="text-base md:text-lg text-gray-300 leading-relaxed mb-8 max-w-2xl mx-auto">
+          Get a personalized cost estimate and find the right Dallas implant provider for your needs. No pressure, just clear information.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://dental.com" class="inline-flex justify-center items-center gap-2 px-8 py-3 rounded-full bg-white text-black text-sm md:text-base font-semibold hover:scale-105 hover:shadow-xl transition-all duration-300 ease-out">
+            Get My Cost Estimate
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 12h13.5M13.5 5.25L18.75 12 13.5 18.75" />
+            </svg>
+          </a>
+          <a href="index.html#faq" class="inline-flex justify-center items-center gap-2 px-6 py-3 rounded-full border border-white/30 text-sm md:text-base font-medium text-white hover:bg-white/10 transition-all duration-300 ease-out">
+            View FAQ
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-black text-white pt-16 pb-10">
+    <div class="max-w-7xl mx-auto px-8 md:px-16">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-16 mb-10">
+        <div class="space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="w-9 h-9 rounded-full bg-white text-black flex items-center justify-center shadow-[0_10px_40px_rgba(0,0,0,0.4)]">
+              <span class="text-sm font-semibold tracking-tight">DD</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-sm font-semibold tracking-tight">Dallas Implant Guide</span>
+              <span class="text-[11px] text-gray-400 font-medium">Transparent Cost Insights</span>
+            </div>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            Independent guidance to help Dallas patients understand, compare, and budget for dental implant treatment—before they ever sit in the chair.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="text-sm font-semibold tracking-wide text-white uppercase">Explore</h3>
+          <a href="index.html#features" class="block text-xs text-gray-400 hover:text-white transition-colors duration-300">Cost Features</a>
+          <a href="index.html#benefits" class="block text-xs text-gray-400 hover:text-white transition-colors duration-300">Benefits</a>
+          <a href="service-page.html" class="block text-xs text-gray-400 hover:text-white transition-colors duration-300">Services</a>
+          <a href="index.html#faq" class="block text-xs text-gray-400 hover:text-white transition-colors duration-300">FAQ</a>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="text-sm font-semibold tracking-wide text-white uppercase">Resources</h3>
+          <a href="privacy.html" class="block text-xs text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+          <a href="terms.html" class="block text-xs text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+          <a href="blog.html" class="block text-xs text-gray-400 hover:text-white transition-colors duration-300">Blog</a>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="text-sm font-semibold tracking-wide text-white uppercase">Connect</h3>
+          <p class="text-xs text-gray-400">
+            Questions about how to interpret your quote? Reach out and we will point you to the most relevant resources.
+          </p>
+          <p class="text-xs text-gray-300">
+            Email:
+            <a href="mailto:info@dental.com" class="underline hover:text-white transition-colors duration-300">info@dental.com</a>
+          </p>
+          <div class="flex items-center gap-4 mt-2">
+            <a href="#" aria-label="Visit us on Facebook" class="w-8 h-8 rounded-full border border-white/15 flex items-center justify-center text-gray-300 hover:text-white hover:border-white/40 hover:scale-105 transition-all duration-300 ease-out">
+              <i class="fab fa-facebook-f text-xs"></i>
+            </a>
+            <a href="#" aria-label="Visit us on X" class="w-8 h-8 rounded-full border border-white/15 flex items-center justify-center text-gray-300 hover:text-white hover:border-white/40 hover:scale-105 transition-all duration-300 ease-out">
+              <i class="fab fa-x-twitter text-xs"></i>
+            </a>
+            <a href="#" aria-label="Visit us on LinkedIn" class="w-8 h-8 rounded-full border border-white/15 flex items-center justify-center text-gray-300 hover:text-white hover:border-white/40 hover:scale-105 transition-all duration-300 ease-out">
+              <i class="fab fa-linkedin-in text-xs"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+        <p class="text-[11px] text-gray-500">
+          © 2025 Dallas Implant Cost Guide. All rights reserved.
+        </p>
+        <p class="text-[11px] text-gray-600">
+          Information provided is for educational purposes only and does not replace professional dental advice, diagnosis, or treatment.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuButton = document.querySelector('.mobile-menu-button');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          const icon = mobileMenuButton.querySelector('i');
+          if (icon) {
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+          }
+        });
+
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            const icon = mobileMenuButton.querySelector('i');
+            if (icon) {
+              icon.classList.remove('fa-times');
+              icon.classList.add('fa-bars');
+            }
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
